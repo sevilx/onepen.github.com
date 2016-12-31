@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>My Blog</title>
+  <title>Ben&#39;s Blog</title>
   
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2016-12-31T15:23:51.829Z</updated>
+  <updated>2016-12-31T17:16:27.014Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,9 +20,25 @@
     <link href="http://yoursite.com/2016/12/31/hello-world/"/>
     <id>http://yoursite.com/2016/12/31/hello-world/</id>
     <published>2016-12-31T15:19:46.000Z</published>
-    <updated>2016-12-31T15:23:51.829Z</updated>
+    <updated>2016-12-31T17:16:27.014Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
+    <content type="html"><![CDATA[<h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="配置-安装-Hexo-插件"><a href="#配置-安装-Hexo-插件" class="headerlink" title="配置 安装 Hexo 插件"></a>配置 安装 Hexo 插件</h2><p><code>//安装hexo插件
+npm install hexo-generator-index --save
+npm install hexo-generator-archive --save
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm install hexo-server --save
+npm install hexo-deployer-git --save
+npm install hexo-deployer-heroku --save
+npm install hexo-deployer-rsync --save
+npm install hexo-deployer-openshift --save
+npm install hexo-renderer-marked@0.2 --save
+npm install hexo-renderer-stylus@0.2 --save
+npm install hexo-generator-feed@1 --save
+npm install hexo-generator-sitemap@1 --save
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save</code></p>
+<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
 <p>2、换行 两个空格 + 回车</p>
 <p>3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</p>
 <p>4、引用 &gt;</p>
@@ -37,8 +53,7 @@
 <p>在线编辑器例文： <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">传送门</a></p>
 <p>Windows编辑器： <a href="http://markdownpad.com/download.html" target="_blank" rel="external">MarkdownPad</a></p>
 <p>你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。  </p>
-<p>##hexo常用命令</p>
-<p>我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令</p>
+<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><p>我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令</p>
 <p>1、新建</p>
 <pre><code>hexo new &quot;my blog&quot;
 </code></pre><p>新建的文件在 hexo/source/_posts/my-blog.md’</p>
@@ -63,8 +78,12 @@
     
     </summary>
     
+      <category term="NAS" scheme="http://yoursite.com/categories/NAS/"/>
     
-      <category term="hexo markdown" scheme="http://yoursite.com/tags/hexo-markdown/"/>
+    
+      <category term="markedown" scheme="http://yoursite.com/tags/markedown/"/>
+    
+      <category term="hexo" scheme="http://yoursite.com/tags/hexo/"/>
     
   </entry>
   
@@ -73,12 +92,18 @@
     <link href="http://yoursite.com/2016/12/31/omv-install-wordpress/"/>
     <id>http://yoursite.com/2016/12/31/omv-install-wordpress/</id>
     <published>2016-12-31T15:19:46.000Z</published>
-    <updated>2016-12-31T15:19:46.521Z</updated>
+    <updated>2016-12-31T16:17:39.204Z</updated>
     
     <summary type="html">
     
     </summary>
     
+      <category term="NAS" scheme="http://yoursite.com/categories/NAS/"/>
+    
+    
+      <category term="openmediavault 3" scheme="http://yoursite.com/tags/openmediavault-3/"/>
+    
+      <category term="wordpress" scheme="http://yoursite.com/tags/wordpress/"/>
     
   </entry>
   
