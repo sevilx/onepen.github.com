@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>My Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2016-12-31T15:23:51.829Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Ben</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World!</title>
+    <link href="http://yoursite.com/2016/12/31/hello-world/"/>
+    <id>http://yoursite.com/2016/12/31/hello-world/</id>
+    <published>2016-12-31T15:19:46.000Z</published>
+    <updated>2016-12-31T15:23:51.829Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
+<p>2、换行 两个空格 + 回车</p>
+<p>3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</p>
+<p>4、引用 &gt;</p>
+<p>5、列表 * ， + ， - ， 1. ，选其中之一，注意后面有个空格</p>
+<p>6、代码区块 四个空格 开头</p>
+<p>7、链接 <code>[文字](链接地址)</code></p>
+<p>8、图片  <code>![图片说明](图片地址)</code> ，图片地址可以是本地路劲，也可以是网络地址</p>
+<p>9、强调 <strong>文字</strong> ， <strong>文字</strong> ， <em>文字</em> ， <em>文字</em></p>
+<p>10、代码 <code>`，</code></p>
+<p>下面来看看例文，你就马上明白，怎么来使用这些符号来写好一篇自己的博文了。</p>
+<p>例文</p>
+<p>在线编辑器例文： <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">传送门</a></p>
+<p>Windows编辑器： <a href="http://markdownpad.com/download.html" target="_blank" rel="external">MarkdownPad</a></p>
+<p>你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。  </p>
+<p>##hexo常用命令</p>
+<p>我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令</p>
+<p>1、新建</p>
+<pre><code>hexo new &quot;my blog&quot;
+</code></pre><p>新建的文件在 hexo/source/_posts/my-blog.md’</p>
+<p>2、编译</p>
+<pre><code>hexo generate
+</code></pre><p>一般部署上去的时候都需要编译一下，编译后，会出现一个 &gt; public 文件夹，将所有的md文件编译成html文件</p>
+<p>3、开启本地服务</p>
+<pre><code>hexo server
+</code></pre><p>这个命令，我之前已经用过了，开启本地hexo服务用的</p>
+<p>4、部署</p>
+<pre><code>hexo deploy
+</code></pre><p>部署到git上的时候，需要用这个命令，下一篇中，我们会使用到这个命令</p>
+<p>5、清除 public</p>
+<pre><code>hexo clean
+</code></pre><p>当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。</p>
+<p>以上这些都是经常用到的一些hexo命令。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;终于整理好GitHub博客，标记一下！&quot;&gt;&lt;a href=&quot;#终于整理好GitHub博客，标记一下！&quot; class=&quot;headerlink&quot; title=&quot;终于整理好GitHub博客，标记一下！&quot;&gt;&lt;/a&gt;终于整理好GitHub博客，标记一下！&lt;/h1&gt;&lt;h2 i
+    
+    </summary>
+    
+    
+      <category term="hexo markdown" scheme="http://yoursite.com/tags/hexo-markdown/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>omv install wordpress</title>
+    <link href="http://yoursite.com/2016/12/31/omv-install-wordpress/"/>
+    <id>http://yoursite.com/2016/12/31/omv-install-wordpress/</id>
+    <published>2016-12-31T15:19:46.000Z</published>
+    <updated>2016-12-31T15:19:46.521Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
