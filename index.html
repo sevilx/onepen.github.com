@@ -245,6 +245,134 @@
             
               
                 
+                <a class="post-title-link" href="/2016/12/31/omv-install-wordpress/" itemprop="url">
+                  openmediavault 3 安装 wordpress
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-31T23:19:46+08:00" content="2016-12-31">
+              2016-12-31
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/NAS/" itemprop="url" rel="index">
+                    <span itemprop="name">NAS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <h2 id="本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv-2-X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3-0安装wordpress的思路："><a href="#本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv-2-X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3-0安装wordpress的思路：" class="headerlink" title="本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路："></a>本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路：</h2><ol>
+<li>安装Mysql数据库PHP环境  </li>
+<li>安装Nginx Web服务器  </li>
+<li>安装wordpress</li>
+</ol>
+<p>好了，话不多说，上图说明：</p>
+<h3 id="首先新建一个wordpress的共享文件夹"><a href="#首先新建一个wordpress的共享文件夹" class="headerlink" title="首先新建一个wordpress的共享文件夹 "></a>首先新建一个wordpress的共享文件夹 <img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/wordpressfolder.jpg" alt="newfolder"></h3><h3 id="然后在插件里直接安装-MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。"><a href="#然后在插件里直接安装-MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。" class="headerlink" title="然后在插件里直接安装 MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。"></a>然后在插件里直接安装 MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。<img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/install_mysqlnginx.png" alt="install_mysqlnginx"></h3><h3 id="设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击"><a href="#设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击" class="headerlink" title="设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击"></a>设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击</h3><blockquote>
+<p><strong>show</strong><br><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/enablemysql.jpg" alt="enablemysql"></p>
+<h3 id="打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了"><a href="#打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了" class="headerlink" title="打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了"></a>打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了</h3><p><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/mysqlset.jpg" alt="mysqlset"></p>
+<h3 id="设置Nginx，新建一个pool，如下图设置，其他保持默认即可。"><a href="#设置Nginx，新建一个pool，如下图设置，其他保持默认即可。" class="headerlink" title="设置Nginx，新建一个pool，如下图设置，其他保持默认即可。"></a>设置Nginx，新建一个pool，如下图设置，其他保持默认即可。</h3><p><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/nginxsetpool.png" alt="nginxsetpool"></p>
+<h3 id="设置Nginx的server，如下图。保存、Apply。"><a href="#设置Nginx的server，如下图。保存、Apply。" class="headerlink" title="设置Nginx的server，如下图。保存、Apply。"></a>设置Nginx的server，如下图。保存、Apply。</h3><p><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/nginxservers.png" alt="nginxservers"></p>
+<h3 id="最后一步，安装wordpress。-用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。"><a href="#最后一步，安装wordpress。-用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。" class="headerlink" title="最后一步，安装wordpress。 用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。"></a>最后一步，安装wordpress。 用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。</h3></blockquote>
+<p><code>cd /media/你硬盘的uuid/wordpress/
+wget https://wordpress.org/latest.tar.gz
+tar xvzf latest.tar.gz --strip-components=1
+rm latest.tar.gz</code></p>
+<h3 id="现在登陆这个网址吧-http-omv的地址-8090"><a href="#现在登陆这个网址吧-http-omv的地址-8090" class="headerlink" title="现在登陆这个网址吧: http://omv的地址:8090/"></a>现在登陆这个网址吧: <a href="http://omv的地址:8090/" target="_blank" rel="external">http://omv的地址:8090/</a></h3><h3 id="大功告成！"><a href="#大功告成！" class="headerlink" title="大功告成！"></a>大功告成！</h3>
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
                 <a class="post-title-link" href="/2016/12/31/hello-world/" itemprop="url">
                   Hello World!
                 </a>
@@ -384,118 +512,6 @@ npm install hexo-generator-baidu-sitemap --save</code></p>
 
 
     
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/31/omv-install-wordpress/" itemprop="url">
-                  omv install wordpress
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-31T23:19:46+08:00" content="2016-12-31">
-              2016-12-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/NAS/" itemprop="url" rel="index">
-                    <span itemprop="name">NAS</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
@@ -530,8 +546,8 @@ npm install hexo-generator-baidu-sitemap --save</code></p>
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/my_head.jpg"
-               alt="Ben" />
-          <p class="site-author-name" itemprop="name">Ben</p>
+               alt="Ben哥" />
+          <p class="site-author-name" itemprop="name">Ben哥</p>
           <p class="site-description motion-element" itemprop="description">一个喜欢折腾电子产品的玩家</p>
         </div>
         <nav class="site-state motion-element">
@@ -613,9 +629,9 @@ npm install hexo-generator-baidu-sitemap --save</code></p>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">Ben</span>
+  <span class="author" itemprop="copyrightHolder">Ben哥</span>
 </div>
-
+<!--
 <div class="powered-by">
   由 <a class="theme-link" href="http://hexo.io">Hexo</a> 强力驱动
 </div>
@@ -626,7 +642,7 @@ npm install hexo-generator-baidu-sitemap --save</code></p>
     NexT.Mist
   </a>
 </div>
-
+-->
         
 
         
