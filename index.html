@@ -74,7 +74,7 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="Ben's Blog" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="Ben哥's Blog" type="application/atom+xml" />
 
 
 
@@ -88,12 +88,12 @@
 
 <meta name="description" content="一个喜欢折腾电子产品的玩家">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Ben's Blog">
+<meta property="og:title" content="Ben哥's Blog">
 <meta property="og:url" content="http://yoursite.com/index.html">
-<meta property="og:site_name" content="Ben's Blog">
+<meta property="og:site_name" content="Ben哥's Blog">
 <meta property="og:description" content="一个喜欢折腾电子产品的玩家">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Ben's Blog">
+<meta name="twitter:title" content="Ben哥's Blog">
 <meta name="twitter:description" content="一个喜欢折腾电子产品的玩家">
 
 
@@ -112,7 +112,7 @@
   };
 </script>
 
-  <title> Ben's Blog </title>
+  <title> Ben哥's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -164,7 +164,7 @@
   <div class="custom-logo-site-title">
     <a href="/"  class="brand" rel="start">
       <span class="logo-line-before"><i></i></span>
-      <span class="site-title">Ben's Blog</span>
+      <span class="site-title">Ben哥's Blog</span>
       <span class="logo-line-after"><i></i></span>
     </a>
   </div>
@@ -288,7 +288,7 @@
               
                 
                 <a class="post-title-link" href="/2017/01/02/personal-note/" itemprop="url">
-                  personal note
+                  个人备注
                 </a>
               
             
@@ -356,63 +356,134 @@
 
       
         
-          
-            <h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="配置-安装-Hexo-插件"><a href="#配置-安装-Hexo-插件" class="headerlink" title="配置 安装 Hexo 插件"></a>配置 安装 Hexo 插件</h2><pre><code>npm install hexo-generator-index --save
-npm install hexo-generator-archive --save  
-npm install hexo-generator-category --save
-npm install hexo-generator-tag --save
-npm install hexo-server --save
-npm install hexo-deployer-git --save
-npm install hexo-deployer-heroku --save
-npm install hexo-deployer-rsync --save
-npm install hexo-deployer-openshift --save
-npm install hexo-renderer-marked@0.2 --save
-npm install hexo-renderer-stylus@0.2 --save
-npm install hexo-generator-feed@1 --save
-npm install hexo-generator-sitemap@1 --save
-npm install hexo-generator-sitemap --save
-npm install hexo-generator-baidu-sitemap --save
-npm install hexo-generator-searchdb --save
-</code></pre><h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
-<p>2、换行 两个空格 + 回车</p>
-<p>3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</p>
-<p>4、引用 &gt;</p>
-<p>5、列表 * ， + ， - ， 1. ，选其中之一，注意后面有个空格</p>
-<p>6、代码区块 四个空格 开头</p>
-<p>7、链接 <code>[文字](链接地址)</code></p>
-<p>8、图片  <code>![图片说明](图片地址)</code> ，图片地址可以是本地路劲，也可以是网络地址</p>
-<p>9、强调 <strong>文字</strong> ， <strong>文字</strong> ， <em>文字</em> ， <em>文字</em></p>
-<p>10、代码 <code>`，</code></p>
-<p>下面来看看例文，你就马上明白，怎么来使用这些符号来写好一篇自己的博文了。</p>
-<p>例文</p>
-<p>在线编辑器例文： <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">传送门</a></p>
-<p>Windows编辑器： <a href="http://markdownpad.com/download.html" target="_blank" rel="external">MarkdownPad</a></p>
-<p>你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。  </p>
-<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><p>我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令</p>
-<p>1、新建</p>
-<pre><code>hexo new &quot;my blog&quot;
-</code></pre><p>新建的文件在 hexo/source/_posts/my-blog.md’</p>
-<p>2、编译</p>
-<pre><code>hexo generate
-</code></pre><p>一般部署上去的时候都需要编译一下，编译后，会出现一个 &gt; public 文件夹，将所有的md文件编译成html文件</p>
-<p>3、开启本地服务</p>
-<pre><code>hexo server
-</code></pre><p>这个命令，我之前已经用过了，开启本地hexo服务用的</p>
-<p>4、部署</p>
-<pre><code>hexo deploy
-</code></pre><p>部署到git上的时候，需要用这个命令，下一篇中，我们会使用到这个命令</p>
-<p>5、清除 public</p>
-<pre><code>hexo clean
-</code></pre><p>当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。</p>
-<p>6、更新hexo：<br>    <code>npm update -g hexo</code></p>
-<p>7、更新主题：  </p>
-<pre><code>`cd 到主题文件夹，执行命令：  
-git pull`
-</code></pre><p>8、更新插件：<br>    <code>npm update</code></p>
-<p>以上这些都是经常用到的一些hexo命令。</p>
-<h2 id="底部logo栏更改"><a href="#底部logo栏更改" class="headerlink" title="底部logo栏更改"></a>底部logo栏更改</h2><p>找到 \themes\next\layout_partials\下面的footer.swig文件，打开，用<code>&lt;!--</code>和<code>--&gt;</code>把其中的<code>powered-by</code>和<code>theme-info</code>这两端注释掉</p>
+          <h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2017/01/02/personal-note/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2016/12/31/hello-world/" itemprop="url">
+                  Hello World!
+                </a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-12-31T23:19:46+08:00" content="2016-12-31">
+              2016-12-31
+            </time>
+          </span>
 
           
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/生活/" itemprop="url" rel="index">
+                    <span itemprop="name">生活</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/12/31/hello-world/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/hello-world/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h2 id="终于建好了自己的微博，颇有感触，也欢迎各位朋友围观！"><a href="#终于建好了自己的微博，颇有感触，也欢迎各位朋友围观！" class="headerlink" title="终于建好了自己的微博，颇有感触，也欢迎各位朋友围观！"></a>终于建好了自己的微博，颇有感触，也欢迎各位朋友围观！</h2>
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/31/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -529,192 +600,17 @@ git pull`
 
       
         
-          
-            <h2 id="本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv-2-X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3-0安装wordpress的思路："><a href="#本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv-2-X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3-0安装wordpress的思路：" class="headerlink" title="本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路："></a>本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路：</h2><ol>
+          <h2 id="本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv-2-X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3-0安装wordpress的思路："><a href="#本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv-2-X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3-0安装wordpress的思路：" class="headerlink" title="本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路："></a>本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路：</h2><ol>
 <li>安装Mysql数据库PHP环境  </li>
 <li>安装Nginx Web服务器  </li>
 <li>安装wordpress</li>
 </ol>
 <p>好了，话不多说，上图说明：</p>
-<h3 id="首先新建一个wordpress的共享文件夹"><a href="#首先新建一个wordpress的共享文件夹" class="headerlink" title="首先新建一个wordpress的共享文件夹 "></a>首先新建一个wordpress的共享文件夹 <img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/wordpressfolder.jpg" alt="newfolder"></h3><h3 id="然后在插件里直接安装-MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。"><a href="#然后在插件里直接安装-MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。" class="headerlink" title="然后在插件里直接安装 MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。"></a>然后在插件里直接安装 MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。<img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/install_mysqlnginx.png" alt="install_mysqlnginx"></h3><h3 id="设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击"><a href="#设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击" class="headerlink" title="设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击"></a>设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击</h3><blockquote>
-<p><strong>show</strong><br><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/enablemysql.jpg" alt="enablemysql"></p>
-<h3 id="打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了"><a href="#打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了" class="headerlink" title="打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了"></a>打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了</h3><p><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/mysqlset.jpg" alt="mysqlset"></p>
-<h3 id="设置Nginx，新建一个pool，如下图设置，其他保持默认即可。"><a href="#设置Nginx，新建一个pool，如下图设置，其他保持默认即可。" class="headerlink" title="设置Nginx，新建一个pool，如下图设置，其他保持默认即可。"></a>设置Nginx，新建一个pool，如下图设置，其他保持默认即可。</h3><p><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/nginxsetpool.png" alt="nginxsetpool"></p>
-<h3 id="设置Nginx的server，如下图。保存、Apply。"><a href="#设置Nginx的server，如下图。保存、Apply。" class="headerlink" title="设置Nginx的server，如下图。保存、Apply。"></a>设置Nginx的server，如下图。保存、Apply。</h3><p><img src="http://oj28i85cd.bkt.clouddn.com/image/nas/wordpress/nginxservers.png" alt="nginxservers"></p>
-<h3 id="最后一步，安装wordpress。-用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。"><a href="#最后一步，安装wordpress。-用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。" class="headerlink" title="最后一步，安装wordpress。 用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。"></a>最后一步，安装wordpress。 用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。</h3></blockquote>
-<p><code>cd /media/你硬盘的uuid/wordpress/
-wget https://wordpress.org/latest.tar.gz
-tar xvzf latest.tar.gz --strip-components=1
-rm latest.tar.gz</code></p>
-<h3 id="现在登陆这个网址吧-http-omv的地址-8090"><a href="#现在登陆这个网址吧-http-omv的地址-8090" class="headerlink" title="现在登陆这个网址吧: http://omv的地址:8090/"></a>现在登陆这个网址吧: <a href="http://omv的地址:8090/" target="_blank" rel="external">http://omv的地址:8090/</a></h3><h3 id="大功告成！"><a href="#大功告成！" class="headerlink" title="大功告成！"></a>大功告成！</h3>
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2016/12/31/hello-world/" itemprop="url">
-                  Hello World!
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            <span class="post-meta-item-icon">
-              <i class="fa fa-calendar-o"></i>
-            </span>
-            <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-12-31T23:19:46+08:00" content="2016-12-31">
-              2016-12-31
-            </time>
-          </span>
-
-          
-            <span class="post-category" >
-              &nbsp; | &nbsp;
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              <span class="post-meta-item-text">分类于</span>
-              
-                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/NAS/" itemprop="url" rel="index">
-                    <span itemprop="name">NAS</span>
-                  </a>
-                </span>
-
-                
-                
-
-              
-            </span>
-          
-
-          
-            
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/12/31/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
-          
-
-          
-
-          
-          
-
-          
-        </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="配置-安装-Hexo-插件"><a href="#配置-安装-Hexo-插件" class="headerlink" title="配置 安装 Hexo 插件"></a>配置 安装 Hexo 插件</h2><pre><code>npm install hexo-generator-index --save
-npm install hexo-generator-archive --save  
-npm install hexo-generator-category --save
-npm install hexo-generator-tag --save
-npm install hexo-server --save
-npm install hexo-deployer-git --save
-npm install hexo-deployer-heroku --save
-npm install hexo-deployer-rsync --save
-npm install hexo-deployer-openshift --save
-npm install hexo-renderer-marked@0.2 --save
-npm install hexo-renderer-stylus@0.2 --save
-npm install hexo-generator-feed@1 --save
-npm install hexo-generator-sitemap@1 --save
-npm install hexo-generator-sitemap --save
-npm install hexo-generator-baidu-sitemap --save
-npm install hexo-generator-searchdb --save
-</code></pre><h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
-<p>2、换行 两个空格 + 回车</p>
-<p>3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</p>
-<p>4、引用 &gt;</p>
-<p>5、列表 * ， + ， - ， 1. ，选其中之一，注意后面有个空格</p>
-<p>6、代码区块 四个空格 开头</p>
-<p>7、链接 <code>[文字](链接地址)</code></p>
-<p>8、图片  <code>![图片说明](图片地址)</code> ，图片地址可以是本地路劲，也可以是网络地址</p>
-<p>9、强调 <strong>文字</strong> ， <strong>文字</strong> ， <em>文字</em> ， <em>文字</em></p>
-<p>10、代码 <code>`，</code></p>
-<p>下面来看看例文，你就马上明白，怎么来使用这些符号来写好一篇自己的博文了。</p>
-<p>例文</p>
-<p>在线编辑器例文： <a href="https://www.zybuluo.com/mdeditor" target="_blank" rel="external">传送门</a></p>
-<p>Windows编辑器： <a href="http://markdownpad.com/download.html" target="_blank" rel="external">MarkdownPad</a></p>
-<p>你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。  </p>
-<h2 id="hexo常用命令"><a href="#hexo常用命令" class="headerlink" title="hexo常用命令"></a>hexo常用命令</h2><p>我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令</p>
-<p>1、新建</p>
-<pre><code>hexo new &quot;my blog&quot;
-</code></pre><p>新建的文件在 hexo/source/_posts/my-blog.md’</p>
-<p>2、编译</p>
-<pre><code>hexo generate
-</code></pre><p>一般部署上去的时候都需要编译一下，编译后，会出现一个 &gt; public 文件夹，将所有的md文件编译成html文件</p>
-<p>3、开启本地服务</p>
-<pre><code>hexo server
-</code></pre><p>这个命令，我之前已经用过了，开启本地hexo服务用的</p>
-<p>4、部署</p>
-<pre><code>hexo deploy
-</code></pre><p>部署到git上的时候，需要用这个命令，下一篇中，我们会使用到这个命令</p>
-<p>5、清除 public</p>
-<pre><code>hexo clean
-</code></pre><p>当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。</p>
-<p>以上这些都是经常用到的一些hexo命令。</p>
-
-          
+          <div class="post-more-link text-center">
+            <a class="btn" href="/2016/12/31/omv-install-wordpress/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
         
       
     </div>
@@ -790,7 +686,7 @@ npm install hexo-generator-searchdb --save
           
             <div class="site-state-item site-state-categories">
               <a href="/categories">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>

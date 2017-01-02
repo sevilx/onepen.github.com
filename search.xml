@@ -3,9 +3,16 @@
   
     
     <entry>
-      <title><![CDATA[personal note]]></title>
+      <title><![CDATA[个人备注]]></title>
       <url>%2F2017%2F01%2F02%2Fpersonal-note%2F</url>
-      <content type="text"><![CDATA[终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件npm install hexo-generator-index --save npm install hexo-generator-archive --save npm install hexo-generator-category --save npm install hexo-generator-tag --save npm install hexo-server --save npm install hexo-deployer-git --save npm install hexo-deployer-heroku --save npm install hexo-deployer-rsync --save npm install hexo-deployer-openshift --save npm install hexo-renderer-marked@0.2 --save npm install hexo-renderer-stylus@0.2 --save npm install hexo-generator-feed@1 --save npm install hexo-generator-sitemap@1 --save npm install hexo-generator-sitemap --save npm install hexo-generator-baidu-sitemap --save npm install hexo-generator-searchdb --save Markdown语法1、分段： 两个回车 2、换行 两个空格 + 回车 3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题 4、引用 &gt; 5、列表 * ， + ， - ， 1. ，选其中之一，注意后面有个空格 6、代码区块 四个空格 开头 7、链接 [文字](链接地址) 8、图片 ![图片说明](图片地址) ，图片地址可以是本地路劲，也可以是网络地址 9、强调 文字 ， 文字 ， 文字 ， 文字 10、代码 `， 下面来看看例文，你就马上明白，怎么来使用这些符号来写好一篇自己的博文了。 例文 在线编辑器例文： 传送门 Windows编辑器： MarkdownPad 你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。 hexo常用命令我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令 1、新建 hexo new &quot;my blog&quot; 新建的文件在 hexo/source/_posts/my-blog.md’ 2、编译 hexo generate 一般部署上去的时候都需要编译一下，编译后，会出现一个 &gt; public 文件夹，将所有的md文件编译成html文件 3、开启本地服务 hexo server 这个命令，我之前已经用过了，开启本地hexo服务用的 4、部署 hexo deploy 部署到git上的时候，需要用这个命令，下一篇中，我们会使用到这个命令 5、清除 public hexo clean 当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。 6、更新hexo： npm update -g hexo 7、更新主题： `cd 到主题文件夹，执行命令： git pull` 8、更新插件： npm update 以上这些都是经常用到的一些hexo命令。 底部logo栏更改找到 \themes\next\layout_partials\下面的footer.swig文件，打开，用&lt;!--和--&gt;把其中的powered-by和theme-info这两端注释掉]]></content>
+      <content type="text"><![CDATA[终于整理好GitHub博客，标记一下！ 配置 安装 Hexo 插件npm install hexo-generator-index --save npm install hexo-generator-archive --save npm install hexo-generator-category --save npm install hexo-generator-tag --save npm install hexo-server --save npm install hexo-deployer-git --save npm install hexo-deployer-heroku --save npm install hexo-deployer-rsync --save npm install hexo-deployer-openshift --save npm install hexo-renderer-marked@0.2 --save npm install hexo-renderer-stylus@0.2 --save npm install hexo-generator-feed@1 --save npm install hexo-generator-sitemap@1 --save npm install hexo-generator-sitemap --save npm install hexo-generator-baidu-sitemap --save npm install hexo-generator-searchdb --save Markdown语法1、分段： 两个回车 2、换行 两个空格 + 回车 3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题 4、引用 &gt; 5、列表 * ， + ， - ， 1. ，选其中之一，注意后面有个空格 6、代码区块 四个空格 开头 7、链接 [文字](链接地址) 8、图片 ![图片说明](图片地址) ，图片地址可以是本地路劲，也可以是网络地址 9、强调 文字 ， 文字 ， 文字 ， 文字 10、代码 `， 下面来看看例文，你就马上明白，怎么来使用这些符号来写好一篇自己的博文了。 例文 在线编辑器例文： 传送门 Windows编辑器： MarkdownPad 你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。 hexo常用命令我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令 1、新建 hexo new &quot;my blog&quot; 新建的文件在 hexo/source/_posts/my-blog.md’ 2、编译 hexo generate 一般部署上去的时候都需要编译一下，编译后，会出现一个 &gt; public 文件夹，将所有的md文件编译成html文件 3、开启本地服务 hexo server 这个命令，我之前已经用过了，开启本地hexo服务用的 4、部署 hexo deploy 部署到git上的时候，需要用这个命令，下一篇中，我们会使用到这个命令 5、清除 public hexo clean 当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。 6、更新hexo： npm update -g hexo 7、更新主题： `cd 到主题文件夹，执行命令： git pull` 8、更新插件： npm update 以上这些都是经常用到的一些hexo命令。 底部logo栏更改找到 \themes\next\layout_partials\下面的footer.swig文件，打开，用&lt;!--和--&gt;把其中的powered-by和theme-info这两端注释掉]]></content>
+    </entry>
+
+    
+    <entry>
+      <title><![CDATA[Hello World!]]></title>
+      <url>%2F2016%2F12%2F31%2Fhello-world%2F</url>
+      <content type="text"><![CDATA[终于建好了自己的微博，颇有感触，也欢迎各位朋友围观！]]></content>
     </entry>
 
     
@@ -13,13 +20,6 @@
       <title><![CDATA[openmediavault 3 安装 wordpress]]></title>
       <url>%2F2016%2F12%2F31%2Fomv-install-wordpress%2F</url>
       <content type="text"><![CDATA[本想在omv上装个wordpress玩玩博客，但是网上找的教程都是omv 2.X的教程，而且非常简单，直接安装一个插件就ok了。研究了下，理清楚3.0安装wordpress的思路： 安装Mysql数据库PHP环境 安装Nginx Web服务器 安装wordpress 好了，话不多说，上图说明： 首先新建一个wordpress的共享文件夹 然后在插件里直接安装 MySQL和Nginx，如下图，由于我已安装，所以按钮部分是灰色的。设置Mysql，如下图，设置管理员密码，最好点击apply生效，然后点击 show 打开页面设置，并用root用户和刚刚设置的管理员密码登陆，然后新建wordpress的数据库，点击确定，Mysql的设置就完成了 设置Nginx，新建一个pool，如下图设置，其他保持默认即可。 设置Nginx的server，如下图。保存、Apply。 最后一步，安装wordpress。 用工具SSH连接OMV，以root用户登陆。切换到最开始建立的wordpress目录用以下命令安装。 cd /media/你硬盘的uuid/wordpress/ wget https://wordpress.org/latest.tar.gz tar xvzf latest.tar.gz --strip-components=1 rm latest.tar.gz 现在登陆这个网址吧: http://omv的地址:8090/大功告成！]]></content>
-    </entry>
-
-    
-    <entry>
-      <title><![CDATA[Hello World!]]></title>
-      <url>%2F2016%2F12%2F31%2Fhello-world%2F</url>
-      <content type="text"><![CDATA[终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件npm install hexo-generator-index --save npm install hexo-generator-archive --save npm install hexo-generator-category --save npm install hexo-generator-tag --save npm install hexo-server --save npm install hexo-deployer-git --save npm install hexo-deployer-heroku --save npm install hexo-deployer-rsync --save npm install hexo-deployer-openshift --save npm install hexo-renderer-marked@0.2 --save npm install hexo-renderer-stylus@0.2 --save npm install hexo-generator-feed@1 --save npm install hexo-generator-sitemap@1 --save npm install hexo-generator-sitemap --save npm install hexo-generator-baidu-sitemap --save npm install hexo-generator-searchdb --save Markdown语法1、分段： 两个回车 2、换行 两个空格 + 回车 3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题 4、引用 &gt; 5、列表 * ， + ， - ， 1. ，选其中之一，注意后面有个空格 6、代码区块 四个空格 开头 7、链接 [文字](链接地址) 8、图片 ![图片说明](图片地址) ，图片地址可以是本地路劲，也可以是网络地址 9、强调 文字 ， 文字 ， 文字 ， 文字 10、代码 `， 下面来看看例文，你就马上明白，怎么来使用这些符号来写好一篇自己的博文了。 例文 在线编辑器例文： 传送门 Windows编辑器： MarkdownPad 你先试试，用Markdown怎么去些自己的文章，有了例子，还是很容易上手的。 hexo常用命令我们在前面的已经略微的接触了一些hexo的命令，如 &gt; hexo new “my blog” ，&gt; hexo server 等。下面来介绍一下我们经常会用到的hexo命令 1、新建 hexo new &quot;my blog&quot; 新建的文件在 hexo/source/_posts/my-blog.md’ 2、编译 hexo generate 一般部署上去的时候都需要编译一下，编译后，会出现一个 &gt; public 文件夹，将所有的md文件编译成html文件 3、开启本地服务 hexo server 这个命令，我之前已经用过了，开启本地hexo服务用的 4、部署 hexo deploy 部署到git上的时候，需要用这个命令，下一篇中，我们会使用到这个命令 5、清除 public hexo clean 当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。 以上这些都是经常用到的一些hexo命令。]]></content>
     </entry>
 
     

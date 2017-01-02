@@ -2,23 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/01/02/personal-note/</loc>
-    
-    <lastmod>2017-01-02T02:17:55.776Z</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite.com/2016/12/31/hello-world/</loc>
     
-    <lastmod>2017-01-02T00:42:24.275Z</lastmod>
+    <lastmod>2017-01-02T02:55:14.296Z</lastmod>
     
   </url>
   
   <url>
     <loc>http://yoursite.com/2016/12/31/omv-install-wordpress/</loc>
     
-    <lastmod>2017-01-01T15:48:36.236Z</lastmod>
+    <lastmod>2017-01-02T02:50:47.424Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/02/personal-note/</loc>
+    
+    <lastmod>2017-01-02T02:50:22.919Z</lastmod>
     
   </url>
   
