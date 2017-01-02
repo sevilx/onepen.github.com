@@ -4,7 +4,14 @@
   <url>
     <loc>http://yoursite.com/2016/12/31/hello-world/</loc>
     
-    <lastmod>2017-01-02T02:55:14.296Z</lastmod>
+    <lastmod>2017-01-02T04:23:26.520Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2017/01/02/personal-note/</loc>
+    
+    <lastmod>2017-01-02T03:23:45.135Z</lastmod>
     
   </url>
   
@@ -12,13 +19,6 @@
     <loc>http://yoursite.com/2016/12/31/omv-install-wordpress/</loc>
     
     <lastmod>2017-01-02T02:50:47.424Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/2017/01/02/personal-note/</loc>
-    
-    <lastmod>2017-01-02T02:50:22.919Z</lastmod>
     
   </url>
   

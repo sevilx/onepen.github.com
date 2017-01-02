@@ -92,7 +92,7 @@
 <meta property="og:url" content="http://yoursite.com/2017/01/02/personal-note/index.html">
 <meta property="og:site_name" content="Ben哥's Blog">
 <meta property="og:description" content="终于整理好GitHub博客，标记一下！">
-<meta property="og:updated_time" content="2017-01-02T02:50:22.919Z">
+<meta property="og:updated_time" content="2017-01-02T03:23:45.135Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="个人备注">
 <meta name="twitter:description" content="终于整理好GitHub博客，标记一下！">
@@ -406,18 +406,48 @@ git pull`
 </code></pre><p>8、更新插件：<br>    <code>npm update</code></p>
 <p>以上这些都是经常用到的一些hexo命令。</p>
 <h2 id="底部logo栏更改"><a href="#底部logo栏更改" class="headerlink" title="底部logo栏更改"></a>底部logo栏更改</h2><p>找到 \themes\next\layout_partials\下面的footer.swig文件，打开，用<code>&lt;!--</code>和<code>--&gt;</code>把其中的<code>powered-by</code>和<code>theme-info</code>这两端注释掉</p>
+<h2 id="添加版权"><a href="#添加版权" class="headerlink" title="添加版权"></a>添加版权</h2><p>对于 <code>hexo next</code> 主题而言先找到<code>（\themes\next\layout\post.swig）</code></p>
+<p>在区域内添加如下代码：</p>
+<pre><code>&lt;div class=&quot;page-footer&quot;&gt;
+    {% if not is_index %}
+          <div id="eof" class="print-invisible">
+     	   <hr class="eof">
+    	  </div>
+		  <div class="copyright" style="clear:both;">
+    	     <p><span>本文标题:</span><a href="{{ url_for(page.path) }}">{{ page.title }}</a></p>
+    	     <p><span>文章作者:</span><a href="/" title="访问 {{ theme.author }} 的个人博客">{{ theme.author }}</a></p>
+         	<p><span>发布时间:</span>{{ page.date.format("YYYY年M月D日 - HH时MM分") }}</p>
+         	<p><span>最后更新:</span>{{ page.updated.format("YYYY年M月D日 - HH时MM分") }}</p>
+         	<p><span>本文字数:</span><span class="page-count">本文一共有{{ wordcount(page.content) }}字</span></p>
+         	<p><span>原始链接:</span><a href="{{ url_for(page.path) }}" title="{{ page.title }}">{{ page.permalink }}</a></p>
+         	<p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="external" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)" target="_blank">Attribution-NonCommercial 4.0</a></p>
+         	<p><span>转载请保留以上信息。</span></p>
+     	 </div>
+    	{% endif %}
+    {% if not is_index and (post.prev or post.next) %}
+    	  <div class="post-nav">
+    	    <div class="post-nav-prev post-nav-item">
+    	      {% if post.prev %}
+    	        <a href="{{ url_for(post.prev.path) }}">{{post.prev.title}}</a>
+    	      {% endif %}
+        &lt;/div&gt;
 
+        &lt;div class=&quot;post-nav-next post-nav-item&quot;&gt;
+          {% if post.next %}
+    	        <a href="{{ url_for(post.next.path) }}">{{post.next.title}}</a>
+    	      {% endif %}
+        &lt;/div&gt;
+      &lt;/div&gt;
+    {% endif %}
+
+ &lt;/div&gt;
+</div></div></code></pre>
       
     </div>
 
     <div>
       
         
-<div id="wechat_subscriber" style="display: block； padding: 10px 0; margin: 20px auto; width: 100%; text-align: center">
-    <img id="wechat_subscriber_qcode" src="/uploads/wechat-qcode.jpg" alt="Ben哥 wechat" style="width: 200px; max-width: 100%;"/>
-    <div>欢迎您扫一扫上面的微信公众号，订阅我的博客！</div>
-</div>
-
       
     </div>
 
@@ -464,8 +494,8 @@ git pull`
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/31/hello-world/" rel="next" title="Hello World!">
-                <i class="fa fa-chevron-left"></i> Hello World!
+              <a href="/2016/12/31/omv-install-wordpress/" rel="next" title="openmediavault 3 安装 wordpress">
+                <i class="fa fa-chevron-left"></i> openmediavault 3 安装 wordpress
               </a>
             
           </div>
@@ -485,30 +515,27 @@ git pull`
 
     <div class="post-spread">
       
-        <!-- JiaThis Button BEGIN -->
-<div class="jiathis_style">
-  <a class="jiathis_button_tsina"></a>
-  <a class="jiathis_button_tqq"></a>
-  <a class="jiathis_button_weixin"></a>
-  <a class="jiathis_button_cqq"></a>
-  <a class="jiathis_button_douban"></a>
-  <a class="jiathis_button_renren"></a>
-  <a class="jiathis_button_qzone"></a>
-  <a class="jiathis_button_kaixin001"></a>
-  <a class="jiathis_button_copy"></a>
-  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
-  <a class="jiathis_counter_style"></a>
-</div>
-<script type="text/javascript" >
-  var jiathis_config={
-    hideMore:false
-  }
-</script>
-<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
-<!-- JiaThis Button END -->
-
-      
     </div>
+	<div class="page-footer">
+    
+      <div id="eof" class="print-invisible">
+        <hr class="eof">
+      </div>
+
+      <div class="copyright" style="clear:both;">
+         <p><span>本文标题:</span><a href="/2017/01/02/personal-note/">个人备注</a></p>
+         <p><span>文章作者:</span><a href="/" title="访问 Ben哥 的个人博客">Ben哥</a></p>
+         <p><span>发布时间:</span>2017年1月2日 - 08时01分</p>
+         <p><span>最后更新:</span>2017年1月2日 - 11时01分</p>
+         <p><span>原始链接:</span><a href="/2017/01/02/personal-note/" title="个人备注">http://yoursite.com/2017/01/02/personal-note/</a></p>
+         <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc/4.0/" title="Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)">Attribution-NonCommercial 4.0</a></p>
+         <p><span>转载请保留以上信息。</span></p>
+      </div>
+    
+
+    
+
+  </div>
   </div>
 
 
@@ -629,7 +656,7 @@ git pull`
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#终于整理好GitHub博客，标记一下！"><span class="nav-number">1.</span> <span class="nav-text">终于整理好GitHub博客，标记一下！</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-安装-Hexo-插件"><span class="nav-number">1.1.</span> <span class="nav-text">配置 安装 Hexo 插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown语法"><span class="nav-number">1.2.</span> <span class="nav-text">Markdown语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">1.3.</span> <span class="nav-text">hexo常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#底部logo栏更改"><span class="nav-number">1.4.</span> <span class="nav-text">底部logo栏更改</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#终于整理好GitHub博客，标记一下！"><span class="nav-number">1.</span> <span class="nav-text">终于整理好GitHub博客，标记一下！</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#配置-安装-Hexo-插件"><span class="nav-number">1.1.</span> <span class="nav-text">配置 安装 Hexo 插件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Markdown语法"><span class="nav-number">1.2.</span> <span class="nav-text">Markdown语法</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#hexo常用命令"><span class="nav-number">1.3.</span> <span class="nav-text">hexo常用命令</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#底部logo栏更改"><span class="nav-number">1.4.</span> <span class="nav-text">底部logo栏更改</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#添加版权"><span class="nav-number">1.5.</span> <span class="nav-text">添加版权</span></a></li></ol></li></ol></div>
             
           </div>
         </section>
