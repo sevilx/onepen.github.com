@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-01-02T00:55:56.272Z</updated>
+  <updated>2017-01-02T02:17:55.776Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/01/02/personal-note/"/>
     <id>http://yoursite.com/2017/01/02/personal-note/</id>
     <published>2017-01-02T00:44:05.000Z</published>
-    <updated>2017-01-02T00:55:56.272Z</updated>
+    <updated>2017-01-02T02:17:55.776Z</updated>
     
     <content type="html"><![CDATA[<h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="配置-安装-Hexo-插件"><a href="#配置-安装-Hexo-插件" class="headerlink" title="配置 安装 Hexo 插件"></a>配置 安装 Hexo 插件</h2><pre><code>npm install hexo-generator-index --save
 npm install hexo-generator-archive --save  
@@ -69,6 +69,11 @@ npm install hexo-generator-searchdb --save
 <p>5、清除 public</p>
 <pre><code>hexo clean
 </code></pre><p>当 source 文件夹中的部分资源更改过之后，特别是对文件进行了删除或者路径的改变之后，需要执行这个命令，然后重新编译。</p>
+<p>6、更新hexo：<br>    <code>npm update -g hexo</code></p>
+<p>7、更新主题：  </p>
+<pre><code>`cd 到主题文件夹，执行命令：  
+git pull`
+</code></pre><p>8、更新插件：<br>    <code>npm update</code></p>
 <p>以上这些都是经常用到的一些hexo命令。</p>
 <h2 id="底部logo栏更改"><a href="#底部logo栏更改" class="headerlink" title="底部logo栏更改"></a>底部logo栏更改</h2><p>找到 \themes\next\layout_partials\下面的footer.swig文件，打开，用<code>&lt;!--</code>和<code>--&gt;</code>把其中的<code>powered-by</code>和<code>theme-info</code>这两端注释掉</p>
 ]]></content>
