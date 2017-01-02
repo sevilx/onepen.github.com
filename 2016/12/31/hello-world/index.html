@@ -86,25 +86,28 @@
 
 
 
-<meta name="description" content="终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件`//安装hexo插件npm install hexo-generator-index –save
-npm install hexo-generator-archive –save
-npm install hexo-generator-category –save
-npm install hexo-generator-tag –sav">
+<meta name="description" content="终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件npm install hexo-generator-index --save
+npm install hexo-generator-archive --save  
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Hello World!">
 <meta property="og:url" content="http://yoursite.com/2016/12/31/hello-world/index.html">
 <meta property="og:site_name" content="Ben's Blog">
-<meta property="og:description" content="终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件`//安装hexo插件npm install hexo-generator-index –save
-npm install hexo-generator-archive –save
-npm install hexo-generator-category –save
-npm install hexo-generator-tag –sav">
-<meta property="og:updated_time" content="2017-01-01T17:23:12.287Z">
+<meta property="og:description" content="终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件npm install hexo-generator-index --save
+npm install hexo-generator-archive --save  
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm">
+<meta property="og:updated_time" content="2017-01-02T00:42:24.275Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hello World!">
-<meta name="twitter:description" content="终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件`//安装hexo插件npm install hexo-generator-index –save
-npm install hexo-generator-archive –save
-npm install hexo-generator-category –save
-npm install hexo-generator-tag –sav">
+<meta name="twitter:description" content="终于整理好GitHub博客，标记一下！配置 安装 Hexo 插件npm install hexo-generator-index --save
+npm install hexo-generator-archive --save  
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm">
 
 
 
@@ -116,8 +119,8 @@ npm install hexo-generator-tag –sav">
     fancybox: true,
     motion: true,
     duoshuo: {
-      userId: 0,
-      author: '博主'
+      userId: 4142702,
+      author: '奔哥'
     }
   };
 </script>
@@ -237,7 +240,7 @@ npm install hexo-generator-tag –sav">
       
         <li class="menu-item menu-item-search">
           
-            <a href="#" class="st-search-show-outputs">
+            <a href="#" class="popup-trigger">
           
             
               <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
@@ -252,19 +255,12 @@ npm install hexo-generator-tag –sav">
   
     <div class="site-search">
       
-  <form class="site-search-form">
-  <input type="text" id="st-search-input" class="st-search-input st-default-search-input" />
-</form>
-
-<script type="text/javascript">
-  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-    (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-    e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
-
-  _st('install', 'Y-zPqy1iJRyCkgXyZyuB','2.0.0');
-</script>
-
+  <div class="popup">
+ <span class="search-icon fa fa-search"></span>
+ <input type="text" id="local-search-input">
+ <div id="local-search-result"></div>
+ <span class="popup-btn-close">close</span>
+</div>
 
 
     </div>
@@ -341,13 +337,6 @@ npm install hexo-generator-tag –sav">
 
           
             
-              <span class="post-comments-count">
-                &nbsp; | &nbsp;
-                <a href="/2016/12/31/hello-world/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/12/31/hello-world/" itemprop="commentsCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -367,23 +356,23 @@ npm install hexo-generator-tag –sav">
       
 
       
-        <h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="配置-安装-Hexo-插件"><a href="#配置-安装-Hexo-插件" class="headerlink" title="配置 安装 Hexo 插件"></a>配置 安装 Hexo 插件</h2><p>`//安装hexo插件<br>npm install hexo-generator-index –save</p>
-<p>npm install hexo-generator-archive –save</p>
-<p>npm install hexo-generator-category –save</p>
-<p>npm install hexo-generator-tag –save</p>
-<p>npm install hexo-server –save</p>
-<p>npm install hexo-deployer-git –save</p>
-<p>npm install hexo-deployer-heroku –save</p>
-<p>npm install hexo-deployer-rsync –save</p>
-<p>npm install hexo-deployer-openshift –save</p>
-<p>npm install hexo-renderer-marked@0.2 –save</p>
-<p>npm install hexo-renderer-stylus@0.2 –save</p>
-<p>npm install hexo-generator-feed@1 –save</p>
-<p>npm install hexo-generator-sitemap@1 –save</p>
-<p>npm install hexo-generator-sitemap –save</p>
-<p>npm install hexo-generator-baidu-sitemap –save</p>
-<p>npm install hexo-generator-searchdb –save`</p>
-<h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
+        <h1 id="终于整理好GitHub博客，标记一下！"><a href="#终于整理好GitHub博客，标记一下！" class="headerlink" title="终于整理好GitHub博客，标记一下！"></a>终于整理好GitHub博客，标记一下！</h1><h2 id="配置-安装-Hexo-插件"><a href="#配置-安装-Hexo-插件" class="headerlink" title="配置 安装 Hexo 插件"></a>配置 安装 Hexo 插件</h2><pre><code>npm install hexo-generator-index --save
+npm install hexo-generator-archive --save  
+npm install hexo-generator-category --save
+npm install hexo-generator-tag --save
+npm install hexo-server --save
+npm install hexo-deployer-git --save
+npm install hexo-deployer-heroku --save
+npm install hexo-deployer-rsync --save
+npm install hexo-deployer-openshift --save
+npm install hexo-renderer-marked@0.2 --save
+npm install hexo-renderer-stylus@0.2 --save
+npm install hexo-generator-feed@1 --save
+npm install hexo-generator-sitemap@1 --save
+npm install hexo-generator-sitemap --save
+npm install hexo-generator-baidu-sitemap --save
+npm install hexo-generator-searchdb --save
+</code></pre><h2 id="Markdown语法"><a href="#Markdown语法" class="headerlink" title="Markdown语法"></a>Markdown语法</h2><p>1、分段： 两个回车</p>
 <p>2、换行 两个空格 + 回车</p>
 <p>3、标题 # ~ ###### 井号的个数表示几级标题，即Markdown可以表示一级标题到六级标题</p>
 <p>4、引用 &gt;</p>
@@ -473,13 +462,13 @@ npm install hexo-generator-tag –sav">
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/12/31/omv-install-wordpress/" rel="next" title="openmediavault 3 安装 wordpress">
-                <i class="fa fa-chevron-left"></i> openmediavault 3 安装 wordpress
-              </a>
-            
           </div>
 
           <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2016/12/31/omv-install-wordpress/" rel="prev" title="openmediavault 3 安装 wordpress">
+                openmediavault 3 安装 wordpress <i class="fa fa-chevron-right"></i>
+              </a>
             
           </div>
         </div>
@@ -528,10 +517,6 @@ npm install hexo-generator-tag –sav">
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/12/31/hello-world/"
-           data-title="Hello World!" data-url="http://yoursite.com/2016/12/31/hello-world/">
-      </div>
-    
   </div>
 
 
@@ -574,7 +559,7 @@ npm install hexo-generator-tag –sav">
         <nav class="site-state motion-element">
           <div class="site-state-item site-state-posts">
             <a href="/archives">
-              <span class="site-state-item-count">2</span>
+              <span class="site-state-item-count">3</span>
               <span class="site-state-item-name">日志</span>
             </a>
           </div>
@@ -752,28 +737,9 @@ npm install hexo-generator-tag –sav">
 
   
 
-  
-    
-  
-
-  <script type="text/javascript">
-    var duoshuoQuery = {short_name:"xiongben"};
-    (function() {
-      var ds = document.createElement('script');
-      ds.type = 'text/javascript';ds.async = true;
-      ds.id = 'duoshuo-script';
-      ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-      ds.charset = 'UTF-8';
-      (document.getElementsByTagName('head')[0]
-      || document.getElementsByTagName('body')[0]).appendChild(ds);
-    })();
-  </script>
-
-  
-    
-  
 
 
+  
 
 
 
